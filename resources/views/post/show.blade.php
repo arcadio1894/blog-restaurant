@@ -17,7 +17,11 @@
 @section('contentTWTitleTag', $post->idea)
 
 @section('styles')
-
+    <style>
+        .text_description_show *[style*="font-size: 1rem;"] {
+            font-size: inherit !important;
+        }
+    </style>
 @endsection
 
 @section('header')
@@ -55,7 +59,7 @@
                 </div>
                 @foreach ($arraySections as $section)
                     @if ($section['type'] === 'description')
-                        <p class="text_description_show">{!! $section['text_description'] !!}</p>
+                        <div class="text_description_show">{!! $section['text_description'] !!}</div>
                     @elseif ($section['type'] === 'title')
                         <h2 class="section-heading">{{ $section['title'] }}</h2>
                     @elseif ($section['type'] === 'image')
@@ -91,4 +95,12 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script>
+        $(document).ready(function() {
+            $('.text_description_show *[style*="font-size: 1rem;"]').removeAttr('style');
+        });
+    </script>
 @endsection
