@@ -5,7 +5,14 @@ $(document).ready(function () {
 
     $(document).on('click', '[data-page]', showData);
 
+    getYear();
 });
+
+function getYear() {
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    document.querySelector("#displayYear").innerHTML = currentYear;
+}
 
 function showData() {
     //event.preventDefault();

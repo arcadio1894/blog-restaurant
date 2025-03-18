@@ -20,7 +20,7 @@ Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post.show');
 Route::get('blog/get/welcome/posts/{number_page}', [PostController::class, 'getDataWelcomePosts'])->name('post.get.welcome');
 
-Route::get('/about', [WelcomeController::class, 'about'])->name('welcome.about');
+Route::get('/nosotros', [WelcomeController::class, 'about'])->name('welcome.about');
 
 Auth::routes(['register' => false]);
 

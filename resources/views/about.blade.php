@@ -1,7 +1,9 @@
 @extends('layouts.appBlog')
 
+@section('title', 'BLOG | Nosotros')
+
 @section('header')
-    <header class="masthead" style="background-image: url({{ asset('template/assets/img/2small-about-bg.jpg') }})">
+    <header class="masthead" style="background-image: url({{ asset('template/assets/img/pizza-and-vegetables-on-dark-kitchen-backdrop-vector.jpg') }})">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -19,8 +21,31 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <p>¡Hola! Soy Remso y te doy la bienvenida a nuestro blog de tecnología independiente. Aquí, encontrarás un enfoque profesional y empresarial sobre las últimas tendencias y desarrollos en el mundo tecnológico. Nos dedicamos a proporcionarte la información más relevante y actualizada para ayudarte a llevar tu organización al siguiente nivel. Exploramos innovaciones, analizamos soluciones tecnológicas y ofrecemos consejos prácticos para optimizar tus procesos empresariales. Nuestro objetivo es ser tu fuente confiable de conocimiento y guía en este dinámico y siempre cambiante ámbito tecnológico.</p>
-                <p>Para conocer más sobre mi trayectoria profesional, te invito a visitar mi perfil en <a href="https://www.linkedin.com/in/remso-ivan-rojas-guevara-a5382912a/" target="_blank">LinkedIn</a> </p>
+                <h2 class="text-center">
+                    Fuego y Masa
+                </h2>
+                <p>
+                    En Fuego y Masa, somos una pizzería orgullosamente trujillana, apasionada por crear momentos inolvidables a través de sabores únicos.
+                </p>
+
+                <p>
+                    Nuestro <b>objetivo</b> no es solo ofrecerte las pizzas clásicas que amas,
+                    sino también sorprenderte con experiencias gastronómicas que despierten tus sentidos y redefinan lo que significa disfrutar de una pizza.
+                </p>
+
+                <p>
+                    Sabemos que las mejores historias comienzan en casa, y por eso llevamos nuestros sabores directamente a tu puerta.
+                    Cada pizza está elaborada con ingredientes cuidadosamente seleccionados y una dedicación que garantiza calidad en cada bocado.
+                    Queremos ser parte de tus momentos especiales, esos que compartes con familia, amigos o simplemente contigo mismo.
+                </p>
+
+                <p>
+                    Porque en Fuego y Masa, creemos que una pizza es más que comida, es el puente hacia recuerdos inolvidables.
+                </p>
+
+                <p style="text-align: center;" >
+                    <b>"Una pizza, mil recuerdos compartidos."</b>
+                </p>
             </div>
         </div>
     </div>
