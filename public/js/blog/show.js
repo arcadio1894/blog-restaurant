@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    // 1. Elimina el style="font-size: 1rem;" en cualquier etiqueta
-    $('.text_description_show *[style*="font-size: 1rem;"]').removeAttr('style');
+    // 1. Elimina atributos style innecesarios en cualquier etiqueta dentro de .text_description_show
+    $('.text_description_show *').removeAttr('style');
 
-    // 2. Elimina <p> que solo contienen <br> o están vacíos
+    // 2. Elimina <p> que solo contienen <br>, &nbsp; o están vacíos
     $('.text_description_show p').each(function() {
         let content = $(this).html().trim();
         if (content === '' || content === '<br>' || content === '&nbsp;') {
@@ -18,9 +18,14 @@ $(document).ready(function() {
         }
     });
 
-    // 4. Elimina espacios normales y &nbsp; al inicio de cualquier etiqueta dentro de .text_description_show
+    // 4. Elimina espacios normales y &nbsp; al inicio de cualquier etiqueta
     $('.text_description_show *').each(function() {
         let content = $(this).html();
-        $(this).html(content.replace(/^(\s|&nbsp;)+/, '')); // Elimina espacios y &nbsp; al inicio
+        if (content) {
+            $(this).html(content.replace(/^(\s|&nbsp;)+/, '')); // Elimina espacios y &nbsp; al inicio
+        }
     });
+
+    // 5. Si hay varios <p> vacíos seguidos, los elimina
+    $('.text_description_show p:empty').remove();
 });
