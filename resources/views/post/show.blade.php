@@ -21,6 +21,11 @@
         .text_description_show *[style*="font-size: 1rem;"] {
             font-size: inherit !important;
         }
+
+        .text_description_show p:empty,
+        .text_description_show p:has(br:only-child) {
+            display: none;
+        }
     </style>
 @endsection
 
