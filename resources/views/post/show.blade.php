@@ -107,9 +107,5 @@
 @endsection
 
 @section('scripts')
-    <script>
-        $(document).ready(function() {
-            $('.text_description_show *[style*="font-size: 1rem;"]').removeAttr('style');
-        });
-    </script>
+    <script src="{{ asset('js/blog/show.js') }}?v={{ time() }}"></script>
 @endsection
