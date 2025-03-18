@@ -237,11 +237,11 @@
 </div>
 
 <template id="previous-page">
-    <div><a class="btn btn-primary text-uppercase" href="#!" id="pagePrev" data-page="">&larr; Newer Posts </a></div>
+    <div><a class="btn btn-primary text-uppercase" href="#!" id="pagePrev" data-page="">&larr; Publicaciones anteriores </a></div>
 </template>
 
 <template id="next-page">
-    <div><a class="btn btn-primary text-uppercase" href="#!" id="pageNext" data-page="">Older Posts →</a></div>
+    <div><a class="btn btn-primary text-uppercase" href="#!" id="pageNext" data-page="">Más publicaciones →</a></div>
 </template>
 
 <template id="item-post">
