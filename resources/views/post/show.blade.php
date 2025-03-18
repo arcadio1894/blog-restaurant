@@ -26,6 +26,10 @@
         .text_description_show p:has(br:only-child) {
             display: none;
         }
+
+        .text_description_show * {
+            white-space: normal;
+        }
     </style>
 @endsection
 
